@@ -2,6 +2,9 @@ package domain;
 
 import java.util.Objects;
 
+/**
+ * Classe Marca de veículos: Preencher com letras maiúculas
+ */
 public class Marca {
 
 

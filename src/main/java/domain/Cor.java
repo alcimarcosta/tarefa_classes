@@ -2,6 +2,9 @@ package domain;
 
 import java.util.Objects;
 
+/**
+ * Classe Cor, preencher com preferência de cores metálicas
+ */
 public class Cor {
 
     private Long id;

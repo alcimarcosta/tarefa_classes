@@ -2,6 +2,9 @@ package domain;
 
 import java.util.Objects;
 
+/**
+ * class Veículos. Todos os campos devem ser preenchidos
+ */
 public class Veiculo {
     private Long id;
     private TipoVeiculo tipoVeiculo;
@@ -70,5 +73,32 @@ public class Veiculo {
     @Override
     public int hashCode() {
         return Objects.hash(id);
+    }
+
+    /**
+     * Metodo que retorna dados do veículo
+     * @deprecated
+     * @see exibirDadosVeiculoDetalhado
+     */
+    public void exibirDadosVeiculo(){
+        System.out.println(
+                tipoVeiculo.getDescricao() + " , " +
+                modelo.getDescricao() + " , " +
+                cor.getDescricao() + " , " +
+                placa
+        );
+    }
+
+    /**
+     * Metodo que exibe os dados do veículo de forma detalhada
+     */
+    public String exibirDadosVeiculoDetalhado(){
+        String dadosVeiculo =
+                "Tipo de veículo: " + this.tipoVeiculo.getDescricao() + ", " +
+                "Modelo: " + modelo.getDescricao() + ", " +
+                "Cor: " + cor.getDescricao() + ", " +
+                "Placa: " + placa;
+
+        return dadosVeiculo;
     }
 }
